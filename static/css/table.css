@@ -1,0 +1,91 @@
+/* Styles for the tables */
+
+/* Table */
+.data-view table {
+  margin-top: 2rem;
+  border-collapse: collapse;
+  transition: box-shadow .3s ease;
+
+}
+
+.data-view table:hover {
+  box-shadow: .5rem .5rem rgba(100, 100, 100, 0.3);
+}
+
+.data-view table tr {
+  border: .5px solid #333;
+}
+
+
+.data-view table tr th {
+  background-color: #aaaaef;
+  transition: background-color .3s ease;
+}
+
+.data-view table tr th:hover {
+  background-color: #8888ff;
+}
+
+.data-view table tr th, .data-view table tr td {
+  border: .5px solid #333;
+}
+
+.data-view table tr td {
+  background-color: #777;
+  transition: background-color .3s ease;
+}
+
+.data-view table tr td:hover {
+  background-color: #999;
+}
+
+.data-view table tr th:hover,
+.data-view table tr td:hover {
+  cursor: pointer;
+
+}
+
+/* Others tables */
+.more-results table {
+  margin-top: 2rem;
+  border-collapse: collapse;
+  transition: box-shadow .3s ease;
+
+}
+
+.more-results table:hover {
+  box-shadow: .5rem .5rem rgba(100, 100, 100, 0.3);
+}
+
+.more-results table tr {
+  border: .5px solid #333;
+}
+
+
+.more-results table tr th {
+  background-color: #aaaaef;
+  transition: background-color .3s ease;
+}
+
+.more-results table tr th:hover {
+  background-color: #8888ff;
+}
+
+.more-results table tr th, .more-results table tr td {
+  border: .5px solid #333;
+}
+
+.more-results table tr td {
+  background-color: #777;
+  transition: background-color .3s ease;
+}
+
+.more-results table tr td:hover {
+  background-color: #999;
+}
+
+.more-results table tr th:hover,
+.more-results table tr td:hover {
+  cursor: pointer;
+
+}

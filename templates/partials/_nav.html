@@ -1,0 +1,23 @@
+<!-- NAV FOR USE -->
+<nav class="nav">
+  <ul class="navbar-left">
+    <li>
+      <a href="{{ url_for('results.home') }}" id="title">Results Website</a>
+    </li>
+  </ul>
+
+  <ul class="navbar-right">
+    <li>
+      <a href="{{ url_for('results.more') }}">
+        <i class="fas fa-info-circle"></i>
+        More
+      </a>
+    </li>
+    <li>
+      <a href="{{ url_for('results.contacts') }}">
+        <i class="far fa-address-book"></i>
+        Contacts
+      </a>
+    </li>
+  </ul>
+</nav>

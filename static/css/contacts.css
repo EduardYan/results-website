@@ -1,0 +1,38 @@
+/* Styles for the contacts page */
+
+
+/* Text resalt */
+#resalt {
+  color: #333;
+}
+
+/* View */
+.view-contacts {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+}
+
+.contact {
+  padding: 1.5rem;
+  background-color: #dddd99;
+  border-radius: .5rem;
+  height: 100%;
+  transition: box-shadow .3s ease;
+}
+
+.contact:hover {
+  cursor: pointer;
+  box-shadow: .7rem .7rem rgba(50, 50, 50, 0.7);
+
+}
+
+.contact h2 {
+  color: #4a4a4a;
+
+}
+
+.phone {
+  color: #444;
+  font-size: 1.2rem;
+}

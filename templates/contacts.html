@@ -1,0 +1,52 @@
+<!-- PAGE FOR THE CONTACTS -->
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/contacts.css') }}">
+
+<h1 class="text-white mb-4">Contacts <i class="far fa-address-book m-3"></i></h1>
+<p class="description mb-2">These are some contacts <span id="resalt">of the school</span></p>
+<hr class="text-white mb-5">
+
+<!-- VIEW OF CONTACTS -->
+<div class="view-contacts">
+  <div class="contact">
+    <h3 class="mb-3">Director</h3>
+    <p class="phone">7823-8432</p>
+    <button class="btn btn-primary">Contact</button>
+  </div>
+
+  <div class="contact">
+    <h3 class="mb-3">Miss Carmen</h3>
+    <p class="phone">79125-2461</p>
+    <button class="btn btn-primary">Contact</button>
+  </div>
+
+  <div class="contact">
+    <h3 class="mb-3">Mister Gonzalo</h3>
+    <p class="phone">7263-7133</p>
+    <button class="btn btn-primary">Contact</button>
+  </div>
+
+  <div class="contact">
+    <h3 class="text-dark mb-3">Miss Lorena</h3>
+    <p class="phone">7717-1911</p>
+    <button class="btn btn-primary">Contact</button>
+  </div>
+
+  <div class="contact">
+    <h3 class="mb-3">Miss Karla</h3>
+    <p class="phone">7512-6523</p>
+    <button class="btn btn-primary">Contact</button>
+  </div>
+
+  <div class="contact">
+    <h3 class="mb-3">Mister Pablo</h3>
+    <p class="phone">7451-4613</p>
+    <button class="btn btn-primary">Contact</button>
+  </div>
+
+</div>
+
+{% endblock %}

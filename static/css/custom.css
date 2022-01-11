@@ -1,0 +1,193 @@
+/* Some custom styles for use
+in the website */
+
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: #444; */
+  background: url('../img/results-image.jpg') no-repeat;
+  background-size: cover;
+}
+
+/* Navigation */
+.nav {
+  padding: 2rem;
+  display: flex;
+  background-color: #9999ff;
+}
+
+.nav .navbar-left, .nav .navbar-right {
+  padding-left: 0;
+  list-style: none;
+}
+
+.nav .navbar-left {
+  margin: 0 0 0 5rem;
+}
+
+.nav .navbar-left li a {
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-weight: lighter;
+  color: #434343;
+  transition: color .3s ease;
+}
+
+.nav .navbar-left li a:hover {
+  color: #555;
+}
+
+.nav .navbar-right {
+  display: flex;
+  margin: 0 0 0 50%;
+}
+
+.nav .navbar-right li {
+  margin: 1.5rem 1rem 0 1rem;
+}
+
+.nav .navbar-right li a {
+  color: #434343;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color .3s ease;
+}
+
+.nav .navbar-right li a {
+  color: #555;
+}
+
+
+/* Container */
+.container {
+  margin-bottom: 8rem;
+}
+
+/* View */
+.view {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+}
+
+/* This is a test */
+/* .container hr {
+  color: #ffffff;
+  height: .2rem;
+} */
+
+.description {
+  font-size: 1.1rem;
+  color: #ccc;
+  transition: text-shadow .3s ease;
+}
+
+.description:hover {
+  text-shadow: 1px 1px rgba(50, 50, 50, 0.2);
+}
+
+.more-description {
+  font-size: 1.1rem;
+  color: #bbb;
+  transition: text-shadow .3s ease;
+}
+
+.more-description:hover {
+  text-shadow: 1px 1px rgba(50, 50, 50, 0.2);
+}
+
+
+/* Info view */
+.info {
+  margin: 6rem 0 3rem 0;
+  border-radius: .6rem;
+  background-color: #888;
+  transition: background-color .3s ease;
+}
+
+.info:hover {
+  background-color: #828282;
+}
+
+/* More view */
+.more-view {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 5rem;
+}
+
+footer {
+  background-color: #9999ff;
+}
+
+/* Footer */
+footer p {
+  font-size: 1.5rem;
+}
+
+footer a {
+  text-decoration: none;
+  margin: 0 0 0 48.5%;
+}
+
+/* 700 pixels */
+@media(max-width: 700px) {
+
+  .nav {
+    display: block;
+    padding: 1.5rem;
+  }
+
+  .nav .navbar-left {
+    margin-left: 2rem;
+  }
+
+  .nav .navbar-right {
+    margin: .5rem 0 0 1rem;
+  }
+
+  .nav .navbar-right li {
+    margin: 1rem .5rem 0 1rem;
+  }
+
+  .view {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  footer a {
+    margin-left: 47%;
+  }
+
+}
+
+/* 500 pixels */
+@media(max-width: 500px) {
+  .nav .navbar-left {
+    margin: 0 0 0 .5rem;
+  }
+
+  .nav .navbar-right {
+    margin-left: .5rem;
+  }
+
+  .nav .navbar-right li {
+    margin-left: 0;
+  }
+
+  .nav .navbar-right li a {
+    padding: .5rem;
+  }
+
+  footer a {
+    margin-left: 39%;
+  }
+
+}

@@ -1,0 +1,136 @@
+<!-- PRINCIPAL PAGE -->
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<!-- PRINCIPAL VIEW -->
+<section class="view">
+  <p class="pt-4 description">The quiz's results of a <span class="text-muted">Scholl.</span>Lorem ipsum
+    dolor sit amet consectetur adipisicing elit. Numquam fugit incidunt blanditiis ipsam odit itaque enim harum esse
+    similique distinctio optio quaerat ex, necessitatibus repellendus odio illum officiis assumenda id! Placeat
+    obcaecati amet iste beatae dolor quaerat commodi totam incidunt illum reiciendis ad quam architecto dolore, nisi
+    iure quos error exercitationem, enim non vero voluptates asperiores optio. Quibusdam, aperiam quam! Lorem ipsum
+    dolor sit amet consectetur adipisicing elit. Voluptate dicta nulla tenetur dolor adipisci quibusdam rerum magni
+    aperiam cumque minima, totam quia, hic quas aut commodi. Reiciendis totam nostrum itaque perspiciatis labore sed
+    ducimus quam impedit suscipit, quisquam id fuga molestias officiis, deleniti tempora facere ea iste repellat
+    aut? Natus.
+
+    <a class="link d-block mt-3" href="#">Learn More</a>
+  </p>
+
+  <!-- DATA VIEW -->
+  <div class="data-view">
+    <h3 class="text-white">Principals results</h3>
+
+    <hr class="text-white">
+
+    <!-- if exists results -->
+    {% if quizs_results %}
+    <table class="table">
+      <tr>
+        <th class="text-center">Student</th>
+        <th class="text-center">Note</th>
+      </tr>
+
+      {% for result in quizs_results %}
+      <tr>
+        <td>{{ result.student }}</td>
+        <!-- here we validate the notes -->
+        <td class="text-center"
+          style="{% if result.note > 8 %}background-color: #aaffaa; {% elif result.note <= 8 and result.note > 5 %} background-color: #ffffaa; {% else %} background-color:#ffaaaa; {% endif %}">
+          {{ result.note }}
+        </td>
+      </tr>
+      {% endfor %}
+
+    </table>
+
+    {% else %}
+    <h3 class="text-white p-4">Not results yet.</h3>
+    {% endif %}
+
+  </div>
+
+</section>
+
+<!-- INFO 1 -->
+<div class="p-4 info">
+  <p class="text-center text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis recusandae,
+    officiis illo perspiciatis expedita quae a, ratione accusamus praesentium assumenda quas impedit! Blanditiis enim
+    in laboriosam voluptatibus quod. Dignissimos fugit architecto, tenetur doloribus facere optio dicta! Accusantium,
+    autem expedita laborum ex nisi mollitia qui eius non facilis minima pariatur, laboriosam, consectetur totam
+    maiores natus odio quasi et laudantium? Esse molestias quam praesentium libero voluptates earum inventore
+    similique, aut amet accusantium accusamus dolore eveniet provident quos reiciendis officiis sunt nulla placeat,
+    corporis, numquam optio et architecto. Quis, ex. Sit quibusdam nobis ullam nesciunt, veritatis, dicta animi,
+    eveniet omnis voluptas praesentium aspernatur!</p>
+</div>
+
+<hr class="text-white mb-5">
+
+<div class="more-results mb-5">
+  <h3 class="text-white mb-4">More results</h3>
+
+  <div class="more-view">
+
+    <p class="more-description">Others results of the students in <span class="text-muted">physicals tests</span>, Lorem
+      ipsum dolor sit, amet consectetur adipisicing elit.
+      Itaque cum blanditiis quaerat repudiandae repellat dolore facilis at animi, asperiores est accusantium voluptas!
+      Quibusdam, accusamus! Officia explicabo, vel corrupti voluptatibus sunt rem qui earum, quam ducimus
+      necessitatibus consectetur amet non numquam modi voluptates distinctio fugit tempora delectus atque perferendis.
+      Libero, possimus?
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus commodi tempore impedit reiciendis
+      accusamus eveniet, temporibus accusantium ut quae, pariatur cupiditate rem architecto fugiat laboriosam cum
+      nemo, id fuga obcaecati vitae officia maiores nesciunt. A nobis laboriosam error, voluptas voluptates
+      perferendis molestiae hic natus facere expedita alias reprehenderit nam quam.
+      <br>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias blanditiis quo, illo maxime quae animi
+      quibusdam, totam praesentium temporibus sit repellat voluptatem. Dignissimos ex harum fuga natus error in quia
+      vel neque aperiam? Debitis aliquam ab laborum, odio necessitatibus omnis non quae, reiciendis commodi
+      accusantium inventore beatae neque odit amet!
+    </p>
+
+    <!-- if exists results -->
+    {% if physicals_results %}
+    <table class="table">
+      <tr>
+        <th class="text-center">Student</th>
+        <th class="text-center">Note</th>
+      </tr>
+
+      {% for result in physicals_results %}
+      <tr>
+        <td>{{ result.student }}</td>
+        <!-- here we validate the notes -->
+        <td class="text-center"
+          style="{% if result.note > 8 %}background-color: #aaffaa; {% elif result.note <= 8 and result.note > 5 %} background-color: #ffffaa; {% else %} background-color:#ffaaaa; {% endif %}">
+          {{ result.note }}
+        </td>
+      </tr>
+      {% endfor %}
+
+    </table>
+
+    {% else %}
+    <h3 class="text-white p-4">Not results yet.</h3>
+    {% endif %}
+  </div>
+</div>
+
+<!-- BUTTON -->
+<a class="mb-5 btn btn-secondary" href="#title">Go to begin</a>
+
+<hr class="text-white">
+
+<!-- INFO 2 -->
+<div class="mt-4 p-4 info">
+  <p class="text-center text-dark">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis recusandae,
+    officiis illo perspiciatis expedita quae a, ratione accusamus praesentium assumenda quas impedit! Blanditiis enim
+    in laboriosam voluptatibus quod. Dignissimos fugit architecto, tenetur doloribus facere optio dicta! Accusantium,
+    autem expedita laborum ex nisi mollitia qui eius non facilis minima pariatur, laboriosam, consectetur totam
+    maiores natus odio quasi et laudantium? Esse molestias quam praesentium libero voluptates earum inventore
+    similique, aut amet accusantium accusamus dolore eveniet provident quos reiciendis officiis sunt nulla placeat,
+    corporis, numquam optio et architecto. Quis, ex. Sit quibusdam nobis ullam nesciunt, veritatis, dicta animi,
+    eveniet omnis voluptas praesentium aspernatur!</p>
+</div>
+
+{% endblock %}
