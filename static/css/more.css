@@ -1,11 +1,13 @@
 /* Styles for the more page */
 
+/* View of info */
 .view-info {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 3rem;
 }
 
+/* parrafo of information */
 .info {
   margin: 2rem 0;
   transition: box-shadow .3s ease;
@@ -22,3 +24,15 @@
 .btn {
   background-color: #ffaaaa;
 }
+
+
+@media(max-width: 700px) {
+  /*changing to 1 column*/
+  .view-info {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*@media(max-width: 500px) {*/
+
+/*}*/

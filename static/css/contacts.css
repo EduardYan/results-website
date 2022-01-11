@@ -36,3 +36,11 @@
   color: #444;
   font-size: 1.2rem;
 }
+
+@media(max-width: 700px) {
+  .view-contacts {
+    grid-template-columns: 1fr;
+
+  }
+
+}

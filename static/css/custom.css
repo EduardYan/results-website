@@ -134,7 +134,7 @@ footer p {
 
 footer a {
   text-decoration: none;
-  margin: 0 0 0 48.5%;
+  margin: 0; /*margin 0 for not have margin left*/
 }
 
 /* 700 pixels */
@@ -162,8 +162,12 @@ footer a {
     row-gap: 2rem;
   }
 
+  .more-view {
+    grid-template-columns: 1fr;
+  }
+
   footer a {
-    margin-left: 47%;
+    margin-left: 0;
   }
 
 }
@@ -186,8 +190,5 @@ footer a {
     padding: .5rem;
   }
 
-  footer a {
-    margin-left: 39%;
-  }
 
 }
